@@ -19,7 +19,7 @@ import cucumber.api.junit.Cucumber;
                 		    "html:target/cucumber-htmlreport",
                 		    "json:target/json-report/cucumber.json",
                             "junit:target/junit-xml/cucumber.xml",
-                            "com.cucumber.listener.ExtentCucumberFormatter:target/extent-report/extent-report.html"
+                            "com.cucumber.listener.ExtentCucumberFormatter:extent-report/extent-report.html"
                             }
                  ,tags = {"~@E2ETest","@SmokeTest"}
                  ,monochrome = true //display console output in readable format

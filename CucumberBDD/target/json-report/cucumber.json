@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Testing use of background",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 540132912,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "print test case started",
+            "match": {
+              "location": "LogInTest.print_test_case_started()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18581543246,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LogInTest.beforeScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Test Login with valid credentials",
+        "description": "",
+        "id": "crm-login-test;test-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1590505268,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LogInTest.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 131486840,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on CRM login page",
+            "match": {
+              "location": "LogInTest.i_am_on_CRM_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13682670532,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter valid username and password and click on Login button",
+            "match": {
+              "location": "LogInTest.i_enter_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144165,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should successfully login",
+            "match": {
+              "location": "LogInTest.i_should_successfully_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "CRM login test",
+    "description": "Verify CRM login page functionality",
+    "id": "crm-login-test",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

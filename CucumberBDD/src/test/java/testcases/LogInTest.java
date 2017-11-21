@@ -37,11 +37,20 @@ public class LogInTest extends TestBase{
 				
 		//Without sdf, screnshot will only go in Extent report
 			
-		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss");
-		Timestamp timestamp = new Timestamp(System.currentTimeMillis());	
+		//SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss");
+		//Timestamp timestamp = new Timestamp(System.currentTimeMillis());	
 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);	
-		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\Screenshot\\"+sdf.format(timestamp)+".png")); 
-		Reporter.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\Screenshot\\"+sdf.format(timestamp)+".png");
+		
+		
+		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\extent-report\\screenshot.png")); 
+		//FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\extent-report\\"+sdf.format(timestamp)+".png")); 
+		//FileUtils.copyFile(src, new File("../extent-report"+sdf.format(timestamp)+".png")); 
+		
+		
+		Reporter.addScreenCaptureFromPath("../extent-report/screenshot.png");
+		//Reporter.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\Screenshot\\"+sdf.format(timestamp)+".png");
+		
+		
 		}
 			
       if (driver != null) {

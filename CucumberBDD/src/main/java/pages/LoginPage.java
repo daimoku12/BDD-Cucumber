@@ -8,7 +8,7 @@ import base.TestBase;
 
 public class LoginPage extends TestBase{
 	
-	@FindBy(name="username")
+	@FindBy(name="username12")
     WebElement username;
 	
 	@FindBy(name="password")

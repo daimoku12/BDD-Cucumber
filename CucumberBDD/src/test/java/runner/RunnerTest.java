@@ -21,7 +21,7 @@ import cucumber.api.junit.Cucumber;
                             "junit:target/junit-xml/cucumber.xml",
                             "com.cucumber.listener.ExtentCucumberFormatter:extent-report/extent-report.html"
                             }
-                 ,tags = {"~@E2ETest","@SmokeTest"}
+                 ,tags = {"@SmokeTest"}
                  ,monochrome = true //display console output in readable format
                  //,strict = true
                  //,dryRun = false //check mapping between feature file and dtep definition 

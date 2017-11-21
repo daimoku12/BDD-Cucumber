@@ -1,8 +1,6 @@
 package testcases;
 import java.io.File;
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -46,10 +44,8 @@ public class LogInTest extends TestBase{
 		//FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\extent-report\\"+sdf.format(timestamp)+".png")); 
 		//FileUtils.copyFile(src, new File("../extent-report"+sdf.format(timestamp)+".png")); 
 		
-		
 		Reporter.addScreenCaptureFromPath("../extent-report/screenshot.png");
 		//Reporter.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\Screenshot\\"+sdf.format(timestamp)+".png");
-		
 		
 		}
 			
